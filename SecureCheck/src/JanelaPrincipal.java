@@ -1,27 +1,27 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class JanelaPrincipal extends JFrame {
+public class JanelaPrincipal extends JFrame implements Navegador {
 
-    private CardLayout cartas = new CardLayout();
-    private JPanel container = new JPanel(cartas);
+    private final CardLayout cardLayout = new CardLayout();
+    private final JPanel areaTelas = new JPanel(cardLayout);
 
     public JanelaPrincipal() {
-        super("SecureCheck");
-        setSize(500,800 );
+        setTitle("SecureCheck");
+        setSize(485, 794);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setLayout(new BorderLayout());
 
-        container.add(new TelaSplash(), "splash");
-        container.add(new TelaHome(), "home");
-        add(container);
+        areaTelas.add(new TelaHome(this), HOME);
+        areaTelas.add(new TelaEstudos(), ESTUDOS);
+        areaTelas.add(new TelaQuiz(), QUIZ);
+        areaTelas.add(new TelaAjustes(), AJUSTES);
 
-        cartas.show(container, "splash");
-
-        javax.swing.Timer timer = new javax.swing.Timer(3000, e -> {
-            cartas.show(container, "home");
-        });
-        timer.setRepeats(false);
-        timer.start();
+        add(areaTelas, BorderLayout.CENTER);
+        add(new BarraNavegacao(this), BorderLayout.SOUTH);
+    }
+    public void irPara(String tela) {
+        cardLayout.show(areaTelas, tela);
     }
 }
