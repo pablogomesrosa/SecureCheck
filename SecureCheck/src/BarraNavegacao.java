@@ -9,10 +9,10 @@ public class BarraNavegacao extends JPanel {
         setBorder(BorderFactory.createEmptyBorder(10, 10, 20, 10));
         setPreferredSize(new Dimension(0, 80));
 
-        adicionarBotao(Navegador.HOME, navegador);
-        adicionarBotao(Navegador.ESTUDOS, navegador);
-        adicionarBotao(Navegador.QUIZ, navegador);
-        adicionarBotao(Navegador.AJUSTES, navegador);
+        adicionarBotao(Navegador.HOME.toUpperCase() , navegador);
+        adicionarBotao(Navegador.ESTUDOS.toUpperCase() , navegador);
+        adicionarBotao(Navegador.QUIZ.toUpperCase() , navegador);
+        adicionarBotao(Navegador.AJUSTES.toUpperCase() , navegador);
     }
 
     private void adicionarBotao(String nome, Navegador navegador) {

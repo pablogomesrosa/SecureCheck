@@ -4,16 +4,16 @@ import java.awt.*;
 public class Cores {
 
     public static final Color ROXO = new Color(72, 32, 128);
-    public static final Color ROSA = new Color(219, 39, 119);
+    public static final Color ROSA = new Color(124, 20, 92);
 
     private Cores() {
     }
 
-    public static JButton criarBotao(String texto, Color fundo, int tamanhoFonte) {
+    public static JButton criarBotao(String texto, Color white, int tamanhoFonte) {
         JButton botao = new JButton(texto);
-        botao.setFont(new Font("Arial", Font.BOLD, tamanhoFonte));
-        botao.setBackground(fundo);
-        botao.setForeground(Color.WHITE);
+        botao.setFont(new Font("Arial".toUpperCase() , Font.BOLD, 15));
+        botao.setBackground(Color.white);
+        botao.setForeground(Cores.ROSA);
         botao.setFocusPainted(false);
         botao.setOpaque(true);
         botao.setBorderPainted(false);
