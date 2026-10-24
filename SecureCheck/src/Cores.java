@@ -11,7 +11,7 @@ public class Cores {
 
     public static JButton criarBotao(String texto, Color white, int tamanhoFonte) {
         JButton botao = new JButton(texto);
-        botao.setFont(new Font("Arial".toUpperCase() , Font.BOLD, 15));
+        botao.setFont(new Font("Arial" , Font.BOLD, 15));
         botao.setBackground(Color.white);
         botao.setForeground(Cores.ROSA);
         botao.setFocusPainted(false);
