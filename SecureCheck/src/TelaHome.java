@@ -3,46 +3,34 @@ import java.awt.*;
 
 public class TelaHome extends JPanel {
 
-    public TelaHome(Navegador navegador) {
+    public TelaHome() {
+        setLayout(null);
         setBackground(Color.WHITE);
-        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-        setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+        JLabel logo= new JLabel("SecureCheck");
+        logo.setFont(new Font("Arial", Font.BOLD, 48));
+        logo.setForeground(new Color(219, 39, 119));
+        logo.setBounds(100, 5, 400, 50);
+        add(logo);
 
-        JLabel titulo = new JLabel("SecureCheck");
-        titulo.setFont(new Font("Arial", Font.BOLD, 48));
-        titulo.setForeground(Cores.ROSA);
-        titulo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JLabel resumo= new JLabel("<html><center>Explore os materiais para aprender ou divirta-se" +
+                " testando seus conhecimentos nos quizzes!</center></html>");
+        resumo.setFont(new Font("Arial", Font.BOLD, 20));
+        resumo.setForeground(new Color(140, 28, 96));
+        resumo.setBounds(100, 50, 300, 300);
+        add(resumo);
 
-        JLabel subtitulo = new JLabel(
-                "<html><div style='text-align:center; width:280px'>"
-                        + "Explore os materiais para aprender ou divirta-se testando seus conhecimentos nos quizzes!"
-                        + "</div></html>");
-        subtitulo.setFont(new Font("Arial", Font.BOLD, 20));
-        subtitulo.setForeground(Cores.ROSA);
-        subtitulo.setAlignmentX(Component.CENTER_ALIGNMENT);
-        subtitulo.setMaximumSize(subtitulo.getPreferredSize());
+        JButton btmateriais = new JButton("Materiais");
+        btmateriais.setFont(new Font("Arial", Font.BOLD, 25));
+        btmateriais.setForeground(Color.white);
+        btmateriais.setBackground(new Color(219, 39, 119));
+        btmateriais.setBounds(100, 300, 295, 85);
+        add(btmateriais);
 
-        JButton btnMateriais = botaoGrande("Materiais");
-        btnMateriais.addActionListener(e -> navegador.irPara(Navegador.ESTUDOS));
-
-        JButton btnQuiz = botaoGrande("Quiz");
-        btnQuiz.addActionListener(e -> navegador.irPara(Navegador.QUIZ));
-
-        add(titulo);
-        add(subtitulo);
-        add(Box.createVerticalStrut(50));
-        add(Box.createVerticalStrut(70));
-        add(btnMateriais);
-        add(Box.createVerticalStrut(30));
-        add(btnQuiz);
-    }
-
-    private JButton botaoGrande(String texto) {
-        JButton botao = Cores.criarBotao(texto, Cores.ROSA, 24);
-        botao.setAlignmentX(Component.CENTER_ALIGNMENT);
-        Dimension tamanho = new Dimension(300, 100);
-        botao.setPreferredSize(tamanho);
-        botao.setMaximumSize(tamanho);
-        return botao;
+        JButton btquiz= new JButton("Quiz");
+        btquiz.setFont(new Font("Arial", Font.BOLD, 25));
+        btquiz.setForeground(Color.white);
+        btquiz.setBackground(new Color(219, 39, 119));
+        btquiz.setBounds(100, 430, 295, 85);
+        add(btquiz);
     }
 }
