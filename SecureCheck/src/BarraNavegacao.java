@@ -26,7 +26,6 @@ public class BarraNavegacao extends JPanel {
 
         BotaoSelecionado.addActionListener(e -> {
             navegador.irPara(nomeDaTela);
-            destacarBotao(nomeDaTela);
         });
 
         botoesInferiores.put(nomeDaTela, BotaoSelecionado);

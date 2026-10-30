@@ -5,7 +5,7 @@ public class Cores {
 
     public static final Color ROXO = new Color(72, 32, 128);
     public static final Color ROSA = new Color(124, 20, 92);
-    public static final Color ROSA_CLARO = new Color(221, 118, 170);
+    public static final Color ROSA_CLARO = new Color(200, 42, 124);
 
     private Cores() {
     }
