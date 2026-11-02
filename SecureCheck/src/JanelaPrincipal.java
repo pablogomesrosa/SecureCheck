@@ -180,6 +180,325 @@ public class JanelaPrincipal extends JFrame implements Navegador {
                     "Lembre-se: sua segurança digital começa com as escolhas que você faz todos os dias!";
 
 
+    private static final String TEXTO_MATERIAL_3 =
+            "PROTEGENDO SUA FAMÍLIA E SEUS DADOS\n\n" +
+                    "Hoje em dia, a tecnologia está presente na rotina de praticamente todas as famílias. Utilizamos celulares, computadores, tablets e outros dispositivos para conversar, estudar, trabalhar, realizar pagamentos, fazer compras e compartilhar momentos importantes.\n\n" +
+
+                    "Com tantas pessoas conectadas, também aumentam os cuidados necessários para manter a segurança digital dentro de casa. Afinal, não são apenas os nossos dados que precisam ser protegidos, mas também as informações de nossos pais, filhos, irmãos e outros familiares.\n\n" +
+
+                    "Imagine se alguém conseguisse acessar o celular de uma pessoa da sua família. Essa pessoa poderia visualizar fotografias, descobrir informações pessoais, acessar conversas, tentar realizar golpes financeiros ou até utilizar a identidade da vítima para enganar outros familiares.\n\n" +
+
+                    "Por isso, a segurança digital deve ser uma preocupação de todos. Proteger a família significa desenvolver bons hábitos, compartilhar conhecimentos e aprender a identificar situações que possam colocar nossas informações em risco.\n\n" +
+
+                    "1. UTILIZE SENHAS FORTES EM TODAS AS CONTAS\n\n" +
+
+                    "As senhas são uma das principais formas de proteger nossas informações pessoais. Cada integrante da família deve utilizar senhas difíceis de adivinhar, evitando combinações simples, como datas de nascimento, nomes próprios ou sequências numéricas.\n\n" +
+
+                    "Também é importante não utilizar a mesma senha em diferentes serviços. Caso uma conta seja comprometida, outras contas que utilizam a mesma senha também poderão ficar vulneráveis.\n\n" +
+
+                    "Uma boa alternativa é utilizar um gerenciador de senhas confiável, que permite armazenar e organizar diferentes senhas com segurança.\n\n" +
+
+                    "Oriente seus familiares a nunca compartilhar suas senhas, nem mesmo com pessoas conhecidas, e a utilizar senhas individuais para cada conta.\n\n" +
+
+                    "2. PROTEJA OS CELULARES E COMPUTADORES DA FAMÍLIA\n\n" +
+
+                    "Os dispositivos utilizados diariamente armazenam muitas informações importantes, como fotografias, documentos, conversas, contatos e dados pessoais.\n\n" +
+
+                    "Por isso, é fundamental utilizar mecanismos de bloqueio, como senhas, reconhecimento facial ou impressão digital, sempre que disponíveis.\n\n" +
+
+                    "Também é importante configurar o bloqueio automático da tela e evitar deixar celulares e computadores desbloqueados em locais públicos ou acessíveis a pessoas desconhecidas.\n\n" +
+
+                    "Quando vários integrantes da família compartilham um computador, procure utilizar contas de usuário separadas. Dessa maneira, cada pessoa poderá manter seus próprios arquivos e configurações.\n\n" +
+
+                    "3. ENSINE CRIANÇAS E ADOLESCENTES A UTILIZAR A INTERNET COM SEGURANÇA\n" +
+
+                    "Crianças e adolescentes estão cada vez mais presentes no ambiente digital, utilizando jogos, redes sociais, aplicativos de mensagens e plataformas de vídeos.\n\n" +
+
+                    "Entretanto, nem sempre conseguem identificar situações perigosas, como conversas com desconhecidos, tentativas de golpes ou pedidos suspeitos de informações pessoais.\n\n" +
+
+                    "Por isso, é importante que os responsáveis conversem sobre os riscos existentes na internet e orientem os mais jovens a não compartilhar endereço, telefone, escola, localização ou fotografias pessoais com desconhecidos.\n\n" +
+
+                    "Também é importante estabelecer limites adequados para o uso da tecnologia e utilizar recursos de controle parental quando necessário.\n\n" +
+
+                    "O objetivo não deve ser apenas controlar o acesso, mas ensinar crianças e adolescentes a reconhecer situações de risco e procurar ajuda de um adulto de confiança quando algo parecer estranho.\n\n" +
+
+                    "4. CUIDADO COM GOLPES ENVOLVENDO FAMILIARES\n\n" +
+
+                    "Um dos golpes que merece bastante atenção é aquele em que criminosos fingem ser parentes ou pessoas conhecidas para pedir dinheiro.\n\n" +
+
+                    "Isso pode acontecer por aplicativos de mensagens, ligações telefônicas ou redes sociais. O criminoso pode utilizar uma fotografia de perfil conhecida e afirmar que trocou de número ou está enfrentando uma emergência financeira.\n\n" +
+
+                    "Em outras situações, podem utilizar fotografias e gravações de voz disponíveis na internet para tentar imitar alguém conhecido.\n\n" +
+
+                    "Antes de realizar qualquer transferência, confirme a identidade da pessoa por outro meio de comunicação, como uma ligação para o número que você já conhece.\n\n" +
+
+                    "Crie também um hábito familiar: sempre verificar pedidos inesperados de dinheiro, mesmo quando parecem vir de alguém próximo.\n\n" +
+
+                    "5. TENHA CUIDADO COM LINKS E MENSAGENS SUSPEITAS\n\n" +
+
+                    "Mensagens falsas podem chegar por SMS, e-mail, redes sociais e aplicativos de comunicação.\n\n" +
+
+                    "Muitas delas apresentam informações alarmantes, como contas bloqueadas, compras não reconhecidas, prêmios inesperados ou problemas bancários. O objetivo é fazer com que a vítima clique rapidamente em um link ou informe seus dados pessoais.\n\n" +
+
+                    "Oriente todos os integrantes da família a desconfiar de mensagens que exigem ações imediatas ou solicitam senhas, códigos de confirmação e informações bancárias.\n\n" +
+
+                    "Quando receber uma mensagem suspeita, procure entrar em contato diretamente com a empresa por seus canais oficiais, sem utilizar os links recebidos.\n\n" +
+
+                    "Lembre-se: nem toda mensagem que apresenta o nome ou a imagem de uma empresa conhecida é verdadeira.\n\n" +
+
+                    "6. PROTEJA AS FOTOGRAFIAS E INFORMAÇÕES DA FAMÍLIA\n\n" +
+
+                    "Fotografias e publicações nas redes sociais podem revelar muito mais informações do que imaginamos.\n\n" +
+
+                    "Uma simples imagem pode mostrar o endereço de uma residência, a escola de uma criança, documentos pessoais ou até a localização de um familiar.\n\n" +
+
+                    "Por isso, antes de publicar fotografias, verifique se elas apresentam informações que deveriam permanecer privadas.\n\n" +
+
+                    "Também converse com os familiares sobre a importância de pedir autorização antes de compartilhar fotografias ou informações de outras pessoas.\n\n" +
+
+                    "Revise as configurações de privacidade das redes sociais e evite divulgar viagens, horários e detalhes da rotina em tempo real.\n\n" +
+
+                    "Proteger a privacidade familiar também significa respeitar as informações e a imagem de cada integrante da família.\n\n" +
+
+                    "7. MANTENHA OS APLICATIVOS E DISPOSITIVOS ATUALIZADOS\n\n" +
+
+                    "Celulares, computadores e aplicativos precisam receber atualizações regularmente.\n\n" +
+
+                    "Essas atualizações podem corrigir falhas de segurança, melhorar o funcionamento dos dispositivos e impedir que problemas conhecidos sejam utilizados para comprometer informações pessoais.\n\n" +
+
+                    "Procure manter os aparelhos da família atualizados e ativar as atualizações automáticas sempre que possível.\n\n" +
+
+                    "Também evite instalar aplicativos desconhecidos ou baixar arquivos de sites suspeitos.\n\n" +
+
+                    "Oriente todos os integrantes da casa a utilizar lojas oficiais para baixar aplicativos e a verificar as permissões solicitadas antes de conceder acesso à câmera, ao microfone, aos contatos e à localização.\n\n" +
+
+                    "8. FAÇA BACKUPS DOS ARQUIVOS IMPORTANTES\n\n" +
+
+                    "Fotografias de família, documentos, vídeos e outros arquivos podem ter grande importância pessoal.\n\n" +
+
+                    "Entretanto, problemas técnicos, perda de dispositivos ou falhas podem fazer com que essas informações desapareçam.\n\n" +
+
+                    "Para evitar esse tipo de situação, é importante realizar cópias de segurança, também conhecidas como backups.\n\n" +
+
+                    "Uma alternativa é utilizar serviços confiáveis de armazenamento em nuvem ou dispositivos externos para guardar cópias dos arquivos importantes.\n\n" +
+
+                    "Procure estabelecer uma rotina de backup para os dispositivos utilizados pela família e verificar periodicamente se os arquivos podem ser recuperados.\n\n" +
+
+                    "Lembre-se também de proteger as contas utilizadas para armazenar essas cópias, utilizando senhas fortes e verificação em duas etapas.\n\n" +
+
+                    "9. CONVERSE COM SUA FAMÍLIA SOBRE SEGURANÇA DIGITAL\n\n" +
+
+                    "A segurança digital não depende apenas de ferramentas tecnológicas. Ela também depende da maneira como cada pessoa utiliza a internet.\n\n" +
+
+                    "Por isso, é importante conversar regularmente com os familiares sobre golpes, mensagens suspeitas, privacidade e proteção de informações pessoais.\n\n" +
+
+                    "Todos precisam saber que não devem compartilhar códigos de confirmação, senhas ou informações bancárias por mensagens ou ligações inesperadas.\n\n" +
+
+                    "Também é importante criar um ambiente em que qualquer integrante da família possa contar quando receber uma mensagem estranha ou perceber alguma atividade suspeita em suas contas.\n\n" +
+
+                    "Quanto mais conhecimento todos tiverem, maiores serão as chances de identificar situações perigosas antes que elas causem problemas.\n\n" +
+
+                    "O QUE SUA FAMÍLIA PODE FAZER PARA COMEÇAR A SE PROTEGER?\n\n" +
+
+                    "Não é necessário mudar todos os hábitos de uma só vez. A família pode começar com pequenas atitudes que fazem diferença na proteção das informações.\n\n" +
+
+                    "Algumas medidas importantes são:\n\n" +
+
+                    "1) Criar senhas fortes e diferentes para cada conta.\n\n" +
+
+                    "2) Ativar a verificação em duas etapas.\n" +
+
+                    "3) Configurar o bloqueio dos celulares e computadores.\n\n" +
+
+                    "4) Conversar com crianças e adolescentes sobre os perigos da internet.\n\n" +
+
+                    "5) Desconfiar de pedidos inesperados de dinheiro.\n\n" +
+
+                    "6) Evitar clicar em links desconhecidos.\n\n" +
+
+                    "7) Revisar as configurações de privacidade das redes sociais.\n\n" +
+
+                    "8) Manter os dispositivos atualizados.\n\n" +
+
+                    "9) Realizar cópias de segurança dos arquivos importantes.\n\n" +
+
+                    "Uma boa prática é reservar alguns minutos para verificar se todos os dispositivos e contas utilizados pela família estão devidamente protegidos.\n\n" +
+
+                    "CONCLUSÃO\n\n" +
+
+                    "Proteger sua família e seus dados significa cuidar da privacidade, das informações pessoais e da segurança de todas as pessoas que fazem parte da sua casa.\n\n" +
+
+                    "Com o crescimento do uso da tecnologia, os cuidados digitais precisam fazer parte da rotina familiar. Crianças, adolescentes e adultos estão sujeitos a golpes, tentativas de invasão e exposição de informações pessoais.\n\n" +
+
+                    "Por isso, a prevenção e a informação são fundamentais. Pequenas atitudes, como utilizar senhas seguras, verificar mensagens suspeitas, proteger os dispositivos e conversar sobre os riscos da internet, podem evitar muitos problemas.\n\n" +
+
+                    "Mais do que proteger aparelhos e contas, a segurança digital representa proteger pessoas, relações e informações importantes.\n\n" +
+
+                    "Lembre-se: a segurança digital da sua família começa com o cuidado de cada integrante.";
+
+
+    private static final String TEXTO_MATERIAL_4 =
+            "A IMPORTÂNCIA DE ATUALIZAR SUAS CHAVES DE SEGURANÇA\n\n" +
+
+                    "Hoje em dia, utilizamos diversos recursos para proteger nossas informações na internet. Senhas, códigos de acesso, chaves de recuperação e métodos de autenticação fazem parte da nossa rotina digital e ajudam a impedir que pessoas não autorizadas acessem nossas contas e dispositivos.\n\n" +
+
+                    "Entretanto, muitas pessoas acreditam que basta criar uma senha ou configurar uma proteção uma única vez para permanecerem seguras. Na realidade, a segurança digital exige atenção constante, pois nossas informações podem mudar, dispositivos podem ser perdidos e mecanismos de proteção podem deixar de ser confiáveis.\n\n" +
+
+                    "Imagine que você utilize a mesma senha há vários anos e que ela tenha sido exposta em algum vazamento de dados. Mesmo que sua conta continue funcionando normalmente, alguém pode ter acesso às informações necessárias para tentar invadi-la.\n\n" +
+
+                    "Por isso, atualizar suas chaves de segurança é uma medida importante para manter a proteção das suas informações. Essa prática ajuda a reduzir riscos, corrigir vulnerabilidades e garantir que apenas pessoas autorizadas tenham acesso às suas contas.\n\n" +
+
+                    "1. ENTENDA O QUE SÃO CHAVES DE SEGURANÇA\n\n" +
+
+                    "As chaves de segurança são recursos utilizados para proteger o acesso a contas, dispositivos, sistemas e informações pessoais.\n\n" +
+
+                    "Elas podem assumir diferentes formas, como senhas, códigos de acesso, chaves de recuperação, certificados digitais e dispositivos físicos utilizados para autenticação.\n\n" +
+
+                    "Cada mecanismo possui uma função específica, mas todos têm um objetivo em comum: impedir que pessoas não autorizadas consigam acessar informações protegidas.\n\n" +
+
+                    "É importante entender que esses recursos precisam ser administrados corretamente. Uma senha antiga que já foi compartilhada ou uma chave de recuperação armazenada em um local inseguro pode comprometer a proteção de uma conta.\n\n" +
+
+                    "2. POR QUE É IMPORTANTE ATUALIZAR SUAS SENHAS?\n\n" +
+
+                    "As senhas são uma das principais formas de proteção utilizadas na internet. Entretanto, quando permanecem iguais por muito tempo e acabam sendo expostas, podem representar um risco para a segurança das contas.\n\n" +
+
+                    "Imagine que você utilize uma senha em determinado site e, posteriormente, esse serviço sofra um vazamento de informações. Se a senha continuar sendo utilizada, outras contas que compartilham a mesma combinação também poderão ficar vulneráveis.\n\n" +
+
+                    "Por isso, sempre que existir suspeita de exposição ou comprometimento, é importante alterar a senha imediatamente.\n\n" +
+
+                    "Também é fundamental utilizar senhas diferentes para cada serviço, evitando que um único problema comprometa várias contas.\n\n" +
+
+                    "Lembre-se: uma senha forte precisa ser mantida em segredo e substituída sempre que houver motivos para acreditar que não está mais protegida.\n\n" +
+
+                    "3. ATUALIZE SUAS CHAVES QUANDO HOUVER SUSPEITA DE VAZAMENTO\n\n" +
+
+                    "Um vazamento de dados acontece quando informações que deveriam permanecer protegidas acabam sendo expostas ou acessadas por pessoas não autorizadas.\n\n" +
+
+                    "Isso pode envolver senhas, endereços de e-mail, telefones, documentos e outras informações pessoais.\n\n" +
+
+                    "Caso descubra que alguma senha ou chave de segurança foi exposta, não espere aparecer algum problema para tomar uma atitude.\n\n" +
+
+                    "Altere imediatamente as credenciais comprometidas e verifique se existem atividades desconhecidas nas contas relacionadas.\n\n" +
+
+                    "Também é importante verificar se a mesma senha foi utilizada em outros serviços e substituí-la nesses locais.\n\n" +
+
+                    "Quanto mais rápido você agir, menores poderão ser os riscos de utilização indevida dessas informações.\n\n" +
+
+                    "4. UTILIZE A VERIFICAÇÃO EM DUAS ETAPAS\n\n" +
+
+                    "A verificação em duas etapas é um recurso que adiciona uma camada extra de proteção às suas contas.\n\n" +
+
+                    "Normalmente, o acesso acontece por meio de uma senha. Com esse recurso ativado, também é necessária uma segunda confirmação, como um código temporário, uma aprovação pelo aplicativo autenticador ou uma chave de segurança física.\n\n" +
+
+                    "Mesmo que alguém descubra sua senha, ainda precisará superar essa etapa adicional para conseguir acessar a conta.\n\n" +
+
+                    "Sempre que possível, utilize métodos de autenticação confiáveis e mantenha seus aplicativos autenticadores atualizados.\n\n" +
+
+                    "Também revise periodicamente os dispositivos autorizados e remova aqueles que não reconhece ou não utiliza mais.\n\n" +
+
+                    "5. ATUALIZE SUAS CHAVES DE RECUPERAÇÃO\n\n" +
+
+                    "As chaves de recuperação são recursos que ajudam a recuperar o acesso a uma conta quando você perde a senha ou não consegue utilizar os métodos tradicionais de autenticação.\n\n" +
+
+                    "Elas podem ser utilizadas em serviços de e-mail, redes sociais, armazenamento em nuvem e outras plataformas.\n\n" +
+
+                    "Entretanto, essas chaves precisam ser armazenadas com cuidado. Caso outra pessoa consiga acesso a elas, poderá utilizá-las indevidamente.\n\n" +
+
+                    "Sempre que um serviço gerar uma nova chave de recuperação, siga as orientações da plataforma e atualize sua cópia armazenada.\n\n" +
+
+                    "Guarde essas informações em um local seguro, separado do dispositivo utilizado diariamente, e nunca compartilhe esses códigos por mensagens ou ligações.\n\n" +
+
+                    "6. REMOVA CHAVES E DISPOSITIVOS QUE NÃO SÃO MAIS UTILIZADOS\n" +
+
+                    "Com o passar do tempo, podemos trocar de celular, computador ou outros dispositivos utilizados para acessar nossas contas.\n\n" +
+
+                    "Entretanto, alguns serviços continuam mantendo os aparelhos antigos como dispositivos autorizados.\n\n" +
+
+                    "Isso significa que uma conta pode continuar vinculada a equipamentos que você não utiliza mais ou que já foram entregues a outras pessoas.\n\n" +
+
+                    "Por isso, revise periodicamente a lista de dispositivos conectados às suas contas.\n\n" +
+
+                    "Remova aparelhos antigos, sessões desconhecidas e métodos de autenticação que não são mais utilizados.\n\n" +
+
+                    "Caso tenha perdido um dispositivo, procure utilizar os recursos oficiais do serviço para bloquear seu acesso e proteger as informações armazenadas nele.\n\n" +
+
+                    "7. MANTENHA SEUS CERTIFICADOS E SISTEMAS DE SEGURANÇA ATUALIZADOS\n\n" +
+
+                    "Além das senhas e códigos de acesso, existem outros mecanismos utilizados para proteger informações digitais.\n\n" +
+
+                    "Certificados digitais, por exemplo, ajudam a verificar identidades e estabelecer conexões seguras entre sistemas.\n\n" +
+
+                    "Esses certificados possuem períodos de validade e podem precisar de renovação para continuar funcionando corretamente.\n\n" +
+
+                    "Também existem atualizações de sistemas de autenticação e ferramentas de segurança que corrigem falhas e melhoram a proteção das informações.\n\n" +
+
+                    "Por isso, procure acompanhar os avisos de atualização dos serviços utilizados e realizar as renovações necessárias.\n\n" +
+
+                    "Sempre faça esses procedimentos pelos canais oficiais para evitar páginas falsas e tentativas de fraude.\n\n" +
+
+                    "8. UTILIZE FERRAMENTAS CONFIÁVEIS PARA ADMINISTRAR SUAS CHAVES\n\n" +
+
+                    "Administrar várias senhas, códigos e métodos de autenticação pode ser uma tarefa complicada.\n\n" +
+
+                    "Para facilitar esse processo, existem ferramentas desenvolvidas especificamente para organizar e proteger essas informações.\n\n" +
+
+                    "Os gerenciadores de senhas, por exemplo, permitem armazenar diferentes credenciais em um ambiente protegido, reduzindo a necessidade de memorizar todas elas.\n\n" +
+
+                    "Também existem aplicativos autenticadores que geram códigos temporários para confirmar o acesso às contas.\n\n" +
+
+                    "Ao escolher essas ferramentas, procure utilizar serviços conhecidos, obtidos em fontes oficiais e que ofereçam recursos adequados de proteção.\n\n" +
+
+                    "Evite armazenar senhas e códigos importantes em arquivos desprotegidos, mensagens ou anotações que possam ser acessadas facilmente por outras pessoas.\n\n" +
+
+                    "9. CRIE UMA ROTINA DE VERIFICAÇÃO DA SUA SEGURANÇA DIGITAL\n\n" +
+
+                    "A proteção das informações não deve acontecer apenas quando surge algum problema.\n\n" +
+
+                    "Criar uma rotina de verificação ajuda a identificar possíveis riscos antes que eles comprometam suas contas.\n\n" +
+
+                    "Reserve alguns momentos para conferir se suas senhas continuam protegidas, se existem dispositivos desconhecidos conectados e se os métodos de recuperação estão atualizados.\n\n" +
+
+                    "Também verifique se os serviços utilizados apresentam avisos de segurança ou recomendam alguma alteração nas configurações.\n\n" +
+
+                    "É importante lembrar que não existe a necessidade de trocar todas as senhas constantemente sem motivo. O mais importante é substituí-las quando houver suspeita de comprometimento, exposição ou quando o próprio serviço recomendar uma atualização.\n\n" +
+
+                    "O QUE VOCÊ PODE FAZER PARA MANTER SUAS CHAVES DE SEGURANÇA ATUALIZADAS?\n\n" +
+
+                    "Manter suas informações protegidas não precisa ser complicado. Algumas atitudes simples podem ajudar bastante na segurança das suas contas.\n\n" +
+
+                    "1 - Utilize senhas fortes e diferentes para cada serviço.\n\n" +
+
+                    "2 - Altere imediatamente senhas que tenham sido expostas.\n\n" +
+
+                    "3 - Ative a verificação em duas etapas.\n\n" +
+
+                    "4 - Atualize suas chaves de recuperação quando necessário.\n\n" +
+
+                    "5 - Remova dispositivos antigos ou desconhecidos.\n\n" +
+
+                    "6 - Renove certificados digitais quando estiverem próximos do vencimento.\n\n" +
+
+                    "7 - Utilize gerenciadores de senhas confiáveis.\n\n" +
+
+                    "8 - Nunca compartilhe códigos de autenticação.\n\n" +
+
+                    "9 - Verifique regularmente os avisos de segurança das suas contas.\n\n" +
+
+                    "Essas práticas ajudam a manter seus mecanismos de proteção atualizados e diminuem as possibilidades de acessos não autorizados.\n\n" +
+
+                    "CONCLUSÃO\n\n" +
+
+                    "Atualizar suas chaves de segurança é uma parte importante da proteção digital. Senhas, códigos de recuperação, certificados e outros mecanismos precisam ser administrados corretamente para continuar protegendo suas informações.\n\n" +
+
+                    "Com o passar do tempo, algumas credenciais podem ser expostas, dispositivos podem deixar de ser utilizados e métodos de autenticação podem precisar de renovação.\n\n" +
+
+                    "Por isso, acompanhar essas mudanças e realizar as atualizações necessárias ajuda a reduzir riscos e manter suas contas protegidas.\n\n" +
+
+                    "A segurança digital não depende apenas de criar mecanismos de proteção, mas também de cuidar deles ao longo do tempo.\n\n" +
+
+                    "Lembre-se: uma proteção eficiente não depende apenas de uma boa chave de segurança, mas também de mantê-la protegida, atualizada e sob seu controle!";
+
+
     private final CardLayout cardLayout = new CardLayout();
     private final JPanel areaTelas = new JPanel(cardLayout);
     private final BarraNavegacao barraNavegacao;
@@ -204,6 +523,16 @@ public class JanelaPrincipal extends JFrame implements Navegador {
             TEXTO_MATERIAL_2,
             this
         ), MATERIAL_2);
+        areaTelas.add(new TelaMaterial(
+             "<html><center>Protegendo sua família <br> e seus dados</center></html>" ,
+                TEXTO_MATERIAL_3,
+                this
+        ), MATERIAL_3);
+        areaTelas.add(new TelaMaterial(
+                "<html><center>A importância de atualizar<br>suas chaves de segurança</center></html>",
+                TEXTO_MATERIAL_4,
+                this
+                ), MATERIAL_4);
         areaTelas.add(new TelaQuiz(), QUIZ);
         areaTelas.add(new TelaAjustes(), AJUSTES);
 
@@ -230,7 +559,7 @@ public class JanelaPrincipal extends JFrame implements Navegador {
     public void irPara(String tela) {
         cardLayout.show(areaTelas, tela);
 
-        if (tela.equals(MATERIAL_1) || tela.equals(MATERIAL_2)) {
+        if (tela.equals(MATERIAL_1) || tela.equals(MATERIAL_2) || tela.equals(MATERIAL_3) || tela.equals(MATERIAL_4)) {
             barraNavegacao.destacarBotao(ESTUDOS);
         } else {
             barraNavegacao.destacarBotao(tela);

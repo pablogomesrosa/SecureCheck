@@ -64,9 +64,31 @@ public class TelaEstudos extends JPanel {
             navegador.irPara(Navegador.MATERIAL_2);
         });
 
+        JButton material3 = criarBotaoMaterial(
+                "<html><center>Protegendo sua família <br>" +
+                        "e seus dados</center></html>"
+        );
+
+        JButton material4 = criarBotaoMaterial(
+                "<html><center>A importância de atualizar<br>" +
+                        "suas chaves de segurança</center></html>"
+        );
+
+        material3.addActionListener(e -> {
+            navegador.irPara(Navegador.MATERIAL_3);
+        });
+
+        material4.addActionListener(e -> {
+            navegador.irPara(Navegador.MATERIAL_4);
+        });
+
         listaMateriais.add(material1);
         listaMateriais.add(Box.createVerticalStrut(12));
         listaMateriais.add(material2);
+        listaMateriais.add(Box.createVerticalStrut(12));
+        listaMateriais.add(material3);
+        listaMateriais.add(Box.createVerticalStrut(12));
+        listaMateriais.add(material4);
 
         add(listaMateriais, BorderLayout.CENTER);
     }
