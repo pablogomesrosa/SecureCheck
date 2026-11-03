@@ -498,6 +498,141 @@ public class JanelaPrincipal extends JFrame implements Navegador {
 
                     "Lembre-se: uma proteção eficiente não depende apenas de uma boa chave de segurança, mas também de mantê-la protegida, atualizada e sob seu controle!";
 
+    private static final String TEXTO_MATERIAL_5 =
+            "COMPRAS ONLINE E PAGAMENTOS DIGITAIS COM SEGURANÇA\n\n" +
+
+                    "Hoje em dia, fazer compras pela internet e utilizar pagamentos digitais se tornou algo muito comum. Compramos roupas, eletrônicos, alimentos e serviços, pagamos contas pelo aplicativo do banco e fazemos transferências por Pix em poucos segundos. Tudo isso traz praticidade e economia de tempo para o nosso dia a dia.\n\n" +
+
+                    "Porém, essa facilidade também chama a atenção de golpistas. Lojas falsas, boletos adulterados, links de pagamento fraudulentos e pedidos de transferência feitos com histórias convincentes são algumas das estratégias utilizadas para enganar os consumidores.\n\n" +
+
+                    "Imagine encontrar um produto que você deseja muito por um preço muito abaixo do normal. A vontade de aproveitar a oportunidade pode fazer com que você deixe de verificar se a loja é confiável. É justamente nesse momento que muitas pessoas acabam caindo em armadilhas.\n\n" +
+
+                    "Por isso, conhecer alguns cuidados básicos é muito importante. Comprar e pagar online com segurança depende de atenção, de verificação e de bons hábitos.\n\n" +
+
+                    "1. PESQUISE SOBRE A LOJA ANTES DE COMPRAR\n\n" +
+
+                    "Antes de fornecer seus dados ou realizar um pagamento, procure saber se a loja realmente existe e se possui boa reputação. Pesquise o nome da empresa, leia avaliações de outros clientes e verifique se há reclamações frequentes sobre atrasos, produtos que não chegam ou dificuldade para conseguir atendimento.\n\n" +
+
+                    "Observe também se o site apresenta informações claras, como nome da empresa, CNPJ, endereço, formas de contato e política de trocas e devoluções. A ausência dessas informações pode ser um sinal de alerta.\n\n" +
+
+                    "Lembre-se de que avaliações e depoimentos exibidos dentro do próprio site podem ser falsos. Sempre que possível, procure opiniões em outras fontes.\n\n" +
+
+                    "2. DESCONFIE DE PREÇOS BONS DEMAIS PARA SEREM VERDADE\n\n" +
+
+                    "Promoções são comuns, mas descontos exagerados em produtos muito procurados merecem atenção. Golpistas utilizam preços muito baixos para atrair vítimas e fazer com que elas comprem sem pensar.\n\n" +
+
+                    "Compare o valor com o de outras lojas conhecidas. Se a diferença for muito grande, desconfie. Também tome cuidado com ofertas que criam pressão, como contadores regressivos, avisos de que restam poucas unidades ou promoções que supostamente acabam em poucos minutos.\n\n" +
+
+                    "O objetivo dessas estratégias é fazer com que você aja com pressa, sem verificar se a oferta é verdadeira.\n\n" +
+
+                    "3. CONFIRA O ENDEREÇO DO SITE E O CAMINHO ATÉ ELE\n\n" +
+
+                    "Muitos golpes começam com um link recebido por mensagem, anúncio ou rede social. Antes de comprar, observe o endereço do site e verifique se há letras trocadas, nomes diferentes do original ou terminações estranhas.\n\n" +
+
+                    "Sempre que possível, digite o endereço da loja diretamente no navegador ou utilize o aplicativo oficial obtido em lojas confiáveis. Evite acessar lojas por links enviados por desconhecidos.\n\n" +
+
+                    "Também lembre-se de que o cadeado e o HTTPS indicam apenas que a conexão é protegida. Isso não garante que a loja seja honesta.\n\n" +
+
+                    "4. ESCOLHA FORMAS DE PAGAMENTO COM MAIS PROTEÇÃO\n\n" +
+
+                    "A forma de pagamento pode fazer diferença caso algo dê errado. Pagamentos feitos por cartão de crédito, por exemplo, normalmente permitem contestar uma cobrança junto à operadora do cartão quando há fraude ou quando o produto não é entregue.\n\n" +
+
+                    "Sempre que possível, utilize cartões virtuais, que geram números temporários ou específicos para compras online e reduzem os riscos em caso de vazamento de dados. Muitos bancos oferecem esse recurso em seus aplicativos.\n\n" +
+
+                    "Tenha mais cuidado com lojas que oferecem desconto apenas para pagamento por transferência ou Pix e que não oferecem outras opções. Isso nem sempre é golpe, mas exige atenção redobrada, principalmente quando a loja não é conhecida.\n\n" +
+
+                    "5. TENHA CUIDADO COM O PIX\n\n" +
+
+                    "O Pix é rápido e prático, mas essa rapidez também significa que, depois de enviado, o dinheiro pode ser difícil de recuperar. Por isso, confira todas as informações antes de confirmar a transferência.\n\n" +
+
+                    "Verifique o nome do recebedor que aparece na tela de confirmação. Se o nome não tiver relação com a loja ou com a pessoa com quem você está negociando, interrompa a operação e confirme os dados por outro canal.\n\n" +
+
+                    "Desconfie de pedidos de Pix para liberar prêmios, empréstimos, encomendas ou supostas taxas de entrega. Além disso, configure no aplicativo do banco um limite de valor para transferências, principalmente para o período noturno.\n\n" +
+
+                    "6. CONFIRA BOLETOS E CÓDIGOS DE PAGAMENTO\n\n" +
+
+                    "Boletos falsos ou adulterados podem enviar o dinheiro para a conta de um golpista. Antes de pagar, confira o nome do beneficiário, o valor, a data e o banco emissor.\n\n" +
+
+                    "Ao pagar um boleto recebido por e-mail ou mensagem, tenha cuidado redobrado. Prefira acessar o site ou o aplicativo oficial da empresa para emitir uma segunda via diretamente por lá.\n\n" +
+
+                    "O mesmo vale para QR Codes. Antes de pagar, confira os dados exibidos no aplicativo e desconfie de códigos colados sobre outros códigos, enviados por desconhecidos ou apresentados em situações inesperadas.\n\n" +
+
+                    "7. PROTEJA SEUS DADOS DE CARTÃO E SEUS CÓDIGOS\n\n" +
+
+                    "Os dados do cartão, o código de segurança e os códigos de confirmação recebidos por SMS ou aplicativo são informações muito sensíveis. Nunca envie fotografias do cartão por mensagem e nunca informe códigos de confirmação a quem entrar em contato de forma inesperada.\n\n" +
+
+                    "Evite salvar os dados do cartão em sites que você não conhece bem. Quando utilizar computadores públicos ou compartilhados, não finalize compras nem salve informações de pagamento.\n\n" +
+
+                    "Ative as notificações de compras no aplicativo do banco ou do cartão. Assim, você poderá perceber rapidamente qualquer cobrança que não reconheça.\n\n" +
+
+                    "8. TENHA CUIDADO COM COMPRAS ENTRE PESSOAS\n\n" +
+
+                    "Plataformas de classificados e redes sociais são muito utilizadas para comprar e vender produtos usados. Nesses locais, golpistas podem se passar por compradores ou vendedores.\n\n" +
+
+                    "Se você for vendedor, desconfie de comprovantes de pagamento enviados por imagem ou por mensagem. Antes de entregar o produto, confirme no aplicativo do seu banco se o valor realmente entrou na conta.\n\n" +
+
+                    "Se você for comprador, evite pagar adiantado para pessoas que você não conhece, principalmente quando houver pressa, preços muito baixos ou recusa em encontrar pessoalmente. Sempre que possível, prefira utilizar os recursos de segurança oferecidos pela própria plataforma.\n\n" +
+
+                    "9. GUARDE COMPROVANTES E ACOMPANHE SUAS COMPRAS\n\n" +
+
+                    "Depois de comprar, guarde o anúncio, a confirmação do pedido, os comprovantes de pagamento, as notas fiscais e as conversas com o vendedor. Esses registros podem ser muito úteis caso você precise fazer uma reclamação.\n\n" +
+
+                    "Acompanhe a entrega usando os canais oficiais e confira o produto assim que ele chegar. Caso exista algum problema, entre em contato com a loja o quanto antes.\n\n" +
+
+                    "Se não conseguir resolver, você pode procurar os órgãos de defesa do consumidor, como o Procon, ou utilizar plataformas de mediação, como o consumidor.gov.br.\n\n" +
+
+                    "E SE EU CAIR EM UM GOLPE DE COMPRA OU PAGAMENTO?\n\n" +
+
+                    "Se perceber que caiu em um golpe, entre em contato imediatamente com o seu banco ou com a operadora do cartão pelos canais oficiais e informe o ocorrido. Quanto mais rápido isso for feito, maiores podem ser as chances de bloquear ou contestar a operação.\n\n" +
+
+                    "Guarde todas as evidências, como capturas de tela, comprovantes, endereços de sites e conversas. Altere as senhas das contas que possam ter sido expostas e, se for necessário, bloqueie o cartão e solicite um novo.\n\n" +
+
+                    "Registre um boletim de ocorrência e, se for o caso, denuncie o anúncio ou o perfil na plataforma onde o golpe aconteceu. Não tenha vergonha de pedir ajuda: qualquer pessoa pode ser vítima de golpes.\n\n" +
+
+                    "O QUE FAZER PARA COMPRAR COM MAIS SEGURANÇA?\n\n" +
+
+                    "Algumas atitudes simples já ajudam bastante:\n\n" +
+
+                    "1) Pesquisar a reputação da loja antes de comprar.\n\n" +
+
+                    "2) Desconfiar de preços muito abaixo do normal.\n\n" +
+
+                    "3) Conferir o endereço do site com atenção.\n\n" +
+
+                    "4) Preferir cartão virtual ou formas de pagamento com mais proteção.\n\n" +
+
+                    "5) Conferir o nome do recebedor antes de confirmar um Pix.\n\n" +
+
+                    "6) Verificar boletos e QR Codes antes de pagar.\n\n" +
+
+                    "7) Nunca compartilhar códigos de confirmação.\n\n" +
+
+                    "8) Ativar as notificações de compras do banco e do cartão.\n\n" +
+
+                    "9) Guardar comprovantes e acompanhar as entregas.\n\n" +
+
+                    "CONCLUSÃO\n\n" +
+
+                    "As compras online e os pagamentos digitais fazem parte da vida moderna e trazem muitas facilidades. Com atenção e bons hábitos, é possível aproveitar essas vantagens com muito mais segurança.\n\n" +
+
+                    "Antes de comprar, pesquisar, conferir e pensar com calma são atitudes que ajudam a evitar prejuízos. Desconfiar de ofertas exageradas e de pedidos de pagamento inesperados não significa deixar de usar a tecnologia, mas sim usá-la com responsabilidade.\n\n" +
+
+                    "Lembre-se: na hora de comprar e pagar online, a pressa é a maior aliada dos golpistas, e a verificação é a sua melhor proteção!";
+
+    private static final String VIDEO_MATERIAL_1 =  "https://www.youtube.com/watch?v=Ty1Mtxg9xCU";
+    private static final String AUDIOBOOK_MATERIAL_1 = "https://notebooklm.link.google/Yk2zMwwfYIxs";
+
+    private static final String VIDEO_MATERIAL_2 = "https://www.youtube.com/watch?v=HYISzVAKpTo";
+    private static final String AUDIOBOOK_MATERIAL_2 = "";
+
+    private static final String VIDEO_MATERIAL_3 = "https://www.youtube.com/watch?v=sLejzPgEN84";
+    private static final String AUDIOBOOK_MATERIAL_3 = "";
+
+    private static final String VIDEO_MATERIAL_4 = "https://www.youtube.com/watch?v=PHeqXOjy1s4";
+    private static final String AUDIOBOOK_MATERIAL_4 = "";
+
+    private static final String VIDEO_MATERIAL_5 = "https://www.youtube.com/watch?v=QqqJtr-7DUk";
+    private static final String AUDIOBOOK_MATERIAL_5 = "";
 
     private final CardLayout cardLayout = new CardLayout();
     private final JPanel areaTelas = new JPanel(cardLayout);
@@ -514,25 +649,41 @@ public class JanelaPrincipal extends JFrame implements Navegador {
         areaTelas.add(new TelaHome(this), HOME);
         areaTelas.add(new TelaEstudos(this), ESTUDOS);
         areaTelas.add(new TelaMaterial(
-            "<html><center>Como não cair<br>em armadilhas<br>digitais</center></html>",
-            TEXTO_MATERIAL_1,
-            this
+                "<html><center>Como não cair<br>em armadilhas<br>digitais</center></html>",
+                TEXTO_MATERIAL_1,
+                VIDEO_MATERIAL_1,
+                AUDIOBOOK_MATERIAL_1,
+                this
         ), MATERIAL_1);
         areaTelas.add(new TelaMaterial(
-            "<html><center>Como proteger sua<br>vida online</center></html>",
-            TEXTO_MATERIAL_2,
-            this
+                "<html><center>Como proteger sua<br>vida online</center></html>",
+                TEXTO_MATERIAL_2,
+                VIDEO_MATERIAL_2,
+                AUDIOBOOK_MATERIAL_2,
+                this
         ), MATERIAL_2);
         areaTelas.add(new TelaMaterial(
-             "<html><center>Protegendo sua família <br> e seus dados</center></html>" ,
+                "<html><center>Protegendo sua família <br> e seus dados</center></html>" ,
                 TEXTO_MATERIAL_3,
+                VIDEO_MATERIAL_3,
+                AUDIOBOOK_MATERIAL_3,
                 this
         ), MATERIAL_3);
         areaTelas.add(new TelaMaterial(
                 "<html><center>A importância de atualizar<br>suas chaves de segurança</center></html>",
                 TEXTO_MATERIAL_4,
+                VIDEO_MATERIAL_4,
+                AUDIOBOOK_MATERIAL_4,
                 this
-                ), MATERIAL_4);
+        ), MATERIAL_4);
+        areaTelas.add(new TelaMaterial(
+                "<html><center>Compras online e pagamentos<br>digitais com segurança</center></html>",
+                TEXTO_MATERIAL_5,
+                VIDEO_MATERIAL_5,
+                AUDIOBOOK_MATERIAL_5,
+                this
+        ), MATERIAL_5);
+
         areaTelas.add(new TelaQuiz(), QUIZ);
         areaTelas.add(new TelaAjustes(), AJUSTES);
 
@@ -544,7 +695,7 @@ public class JanelaPrincipal extends JFrame implements Navegador {
         cardLayout.show(areaTelas, "SPLASH");
         barraNavegacao.setVisible(false);
 
-        Timer temporizador = new Timer(2000, e -> {
+        Timer temporizador = new Timer(1, e -> {
             irPara(HOME);
             barraNavegacao.setVisible(true);
             revalidate();
@@ -559,7 +710,7 @@ public class JanelaPrincipal extends JFrame implements Navegador {
     public void irPara(String tela) {
         cardLayout.show(areaTelas, tela);
 
-        if (tela.equals(MATERIAL_1) || tela.equals(MATERIAL_2) || tela.equals(MATERIAL_3) || tela.equals(MATERIAL_4)) {
+        if (tela.equals(MATERIAL_1) || tela.equals(MATERIAL_2) || tela.equals(MATERIAL_3) || tela.equals(MATERIAL_4) ||  tela.equals(MATERIAL_5)) {
             barraNavegacao.destacarBotao(ESTUDOS);
         } else {
             barraNavegacao.destacarBotao(tela);

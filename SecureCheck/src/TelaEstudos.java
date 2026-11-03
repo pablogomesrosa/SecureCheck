@@ -56,14 +56,6 @@ public class TelaEstudos extends JPanel {
             "vida online</center></html>"
         );
 
-        material1.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_1);
-        });
-
-        material2.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_2);
-        });
-
         JButton material3 = criarBotaoMaterial(
                 "<html><center>Protegendo sua família <br>" +
                         "e seus dados</center></html>"
@@ -74,12 +66,29 @@ public class TelaEstudos extends JPanel {
                         "suas chaves de segurança</center></html>"
         );
 
+        JButton material5 = criarBotaoMaterial(
+                "<html><center>Compras online e pagamentos<br>" +
+                        "digitais com segurança</center></html>"
+        );
+
+        material1.addActionListener(e -> {
+            navegador.irPara(Navegador.MATERIAL_1);
+        });
+
+        material2.addActionListener(e -> {
+            navegador.irPara(Navegador.MATERIAL_2);
+        });
+
         material3.addActionListener(e -> {
             navegador.irPara(Navegador.MATERIAL_3);
         });
 
         material4.addActionListener(e -> {
             navegador.irPara(Navegador.MATERIAL_4);
+        });
+
+        material5.addActionListener(e -> {
+            navegador.irPara(Navegador.MATERIAL_5);
         });
 
         listaMateriais.add(material1);
@@ -89,6 +98,10 @@ public class TelaEstudos extends JPanel {
         listaMateriais.add(material3);
         listaMateriais.add(Box.createVerticalStrut(12));
         listaMateriais.add(material4);
+        listaMateriais.add(Box.createVerticalStrut(12));
+        listaMateriais.add(material5);
+        listaMateriais.add(Box.createVerticalStrut(12));
+
 
         add(listaMateriais, BorderLayout.CENTER);
     }

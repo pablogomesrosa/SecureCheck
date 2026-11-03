@@ -1,10 +1,11 @@
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.net.URI;
 
 public class TelaMaterial extends JPanel {
 
-    public TelaMaterial(String tituloTexto, String conteudo, Navegador navegador) {
+    public TelaMaterial(String tituloTexto, String conteudo, String urlVideo, String urlAudiobook, Navegador navegador) {
         setLayout(new BorderLayout());
         setBackground(Color.WHITE);
         setBorder(new EmptyBorder(0, 20, 0, 20));
@@ -46,22 +47,59 @@ public class TelaMaterial extends JPanel {
         caixaTexto.add(rolagem, BorderLayout.CENTER);
         add(caixaTexto, BorderLayout.CENTER);
 
-        JButton voltar = new JButton("Voltar");
-        voltar.setFont(new Font("Arial", Font.PLAIN, 28));
-        voltar.setForeground(Color.WHITE);
-        voltar.setBackground(new Color(124, 20, 92));
-        voltar.setFocusPainted(false);
-        voltar.setBorderPainted(false);
-        voltar.setOpaque(true);
-        voltar.setPreferredSize(new Dimension(0, 58));
-        voltar.addActionListener(e -> {
-            navegador.irPara(Navegador.ESTUDOS);
-        });
+        JButton voltar = criarBotaoRodape("Voltar", 28, 58);
+        voltar.addActionListener(_ -> navegador.irPara(Navegador.ESTUDOS));
 
-        JPanel rodape = new JPanel(new BorderLayout());
+        JButton video = criarBotaoRodape("Video", 24, 52);
+        video.addActionListener(_ -> abrirLink(urlVideo));
+
+        JButton audiobook = criarBotaoRodape("Audiobook", 24, 52);
+        audiobook.addActionListener(_ -> abrirLink(urlAudiobook));
+
+        JPanel linhaMidia = new JPanel(new GridLayout(1, 2, 10, 0));
+        linhaMidia.setBackground(Color.WHITE);
+        linhaMidia.add(video);
+        linhaMidia.add(audiobook);
+
+        JPanel rodape = new JPanel(new GridLayout(2, 1, 0, 10));
         rodape.setBackground(Color.WHITE);
         rodape.setBorder(new EmptyBorder(12, 0, 18, 0));
-        rodape.add(voltar, BorderLayout.CENTER);
+        rodape.add(voltar);
+        rodape.add(linhaMidia);
         add(rodape, BorderLayout.SOUTH);
+    }
+
+    private void abrirLink(String url) {
+        if (url == null || url.isBlank()) {
+            JOptionPane.showMessageDialog(this,
+                    "Este conteúdo ainda não está disponível.",
+                    "Em breve", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        try {
+            if (!Desktop.isDesktopSupported()
+                    || !Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                throw new UnsupportedOperationException("Navegador não suportado");
+            }
+
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Não foi possível abrir o link no navegador.",
+                    "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private JButton criarBotaoRodape(String texto, int tamanhoFonte, int altura) {
+        JButton botao = new JButton(texto);
+        botao.setFont(new Font("Arial", Font.PLAIN, tamanhoFonte));
+        botao.setForeground(Color.WHITE);
+        botao.setBackground(new Color(124, 20, 92));
+        botao.setFocusPainted(false);
+        botao.setBorderPainted(false);
+        botao.setOpaque(true);
+        botao.setPreferredSize(new Dimension(0, altura));
+        return botao;
     }
 }

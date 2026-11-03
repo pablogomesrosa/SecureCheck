@@ -22,11 +22,9 @@ public class BarraNavegacao extends JPanel {
     }
 
     private void criarBotao(String nomeDaTela, Navegador navegador) {
-        JButton BotaoSelecionado = Cores.criarBotao(nomeDaTela, Cores.ROXO, 20);
+        JButton BotaoSelecionado = Cores.criarBotao(nomeDaTela);
 
-        BotaoSelecionado.addActionListener(e -> {
-            navegador.irPara(nomeDaTela);
-        });
+        BotaoSelecionado.addActionListener(_ -> navegador.irPara(nomeDaTela));
 
         botoesInferiores.put(nomeDaTela, BotaoSelecionado);
         add(BotaoSelecionado);

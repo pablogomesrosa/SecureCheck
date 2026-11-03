@@ -8,6 +8,7 @@ public interface Navegador {
     String MATERIAL_2 = "MATERIAL_2";
     String MATERIAL_3 = "MATERIAL_3";
     String MATERIAL_4 = "MATERIAL_4";
+    String MATERIAL_5 = "MATERIAL_5";
 
     void irPara(String tela);
 }

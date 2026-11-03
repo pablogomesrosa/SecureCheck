@@ -10,7 +10,7 @@ public class Cores {
     private Cores() {
     }
 
-    public static JButton criarBotao(String texto, Color white, int tamanhoFonte) {
+    public static JButton criarBotao(String texto) {
         JButton botao = new JButton(texto);
         botao.setFont(new Font("Arial" , Font.BOLD, 15));
         botao.setBackground(Color.white);
