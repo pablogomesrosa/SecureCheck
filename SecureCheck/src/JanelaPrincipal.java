@@ -695,7 +695,7 @@ public class JanelaPrincipal extends JFrame implements Navegador {
         cardLayout.show(areaTelas, "SPLASH");
         barraNavegacao.setVisible(false);
 
-        Timer temporizador = new Timer(1, e -> {
+        Timer temporizador = new Timer(2, e -> {
             irPara(HOME);
             barraNavegacao.setVisible(true);
             revalidate();
