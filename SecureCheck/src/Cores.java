@@ -9,11 +9,10 @@ public class Cores {
 
     private Cores() {
     }
-
     public static JButton criarBotao(String texto) {
         JButton botao = new JButton(texto);
         botao.setFont(new Font("Arial" , Font.BOLD, 15));
-        botao.setBackground(Color.white);
+        botao.setBackground(Color.WHITE);
         botao.setForeground(Cores.ROSA);
         botao.setFocusPainted(false);
         botao.setOpaque(true);

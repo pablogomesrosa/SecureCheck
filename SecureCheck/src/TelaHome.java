@@ -37,9 +37,7 @@ public class TelaHome extends JPanel {
         posicao.gridy = 2;
         posicao.insets = new Insets(0, 0, 35, 0);
         add(btmateriais, posicao);
-        btmateriais.addActionListener(e -> {
-            navegador.irPara(Navegador.ESTUDOS);
-        });
+        btmateriais.addActionListener(_ -> navegador.irPara(Navegador.ESTUDOS));
 
         JButton btquiz= new JButton("Quiz");
         btquiz.setFont(new Font("Arial",Font.PLAIN, 40));
@@ -52,8 +50,7 @@ public class TelaHome extends JPanel {
         posicao.gridy = 4;
         posicao.weighty = 1;
         add(Box.createVerticalGlue(), posicao);
-        btquiz.addActionListener(e -> {
-            navegador.irPara(Navegador.QUIZ);
-        });
+        btquiz.addActionListener(
+                _ -> navegador.irPara(Navegador.QUIZ));
     }
 }

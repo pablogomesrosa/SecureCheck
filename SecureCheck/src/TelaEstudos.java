@@ -16,17 +16,7 @@ public class TelaEstudos extends JPanel {
         titulo.setForeground(new Color(219, 39, 119));
         titulo.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JLabel descricao = new JLabel(
-            "<html><center>Explore os materiais no seu<br>" +
-            "ritmo, com opções de vídeos e<br>" +
-            "audiobooks!</center></html>"
-        );
-        descricao.setFont(new Font("Arial", Font.PLAIN, 20));
-        descricao.setForeground(new Color(140, 28, 96));
-        descricao.setHorizontalAlignment(SwingConstants.CENTER);
-        descricao.setAlignmentX(Component.CENTER_ALIGNMENT);
-        descricao.setPreferredSize(new Dimension(440, 80));
-        descricao.setMaximumSize(new Dimension(440, 80));
+        JLabel descricao = createDescricao();
 
         cabecalho.setBorder(
             BorderFactory.createEmptyBorder(25, 10, 20, 10)
@@ -70,26 +60,15 @@ public class TelaEstudos extends JPanel {
                 "<html><center>Compras online e pagamentos<br>" +
                         "digitais com segurança</center></html>"
         );
+        material1.addActionListener(_ -> navegador.irPara(Navegador.MATERIAL_1));
 
-        material1.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_1);
-        });
+        material2.addActionListener(_ -> navegador.irPara(Navegador.MATERIAL_2));
 
-        material2.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_2);
-        });
+        material3.addActionListener(_ -> navegador.irPara(Navegador.MATERIAL_3));
 
-        material3.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_3);
-        });
+        material4.addActionListener(_ -> navegador.irPara(Navegador.MATERIAL_4));
 
-        material4.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_4);
-        });
-
-        material5.addActionListener(e -> {
-            navegador.irPara(Navegador.MATERIAL_5);
-        });
+        material5.addActionListener(_ -> navegador.irPara(Navegador.MATERIAL_5));
 
         listaMateriais.add(material1);
         listaMateriais.add(Box.createVerticalStrut(12));
@@ -104,6 +83,21 @@ public class TelaEstudos extends JPanel {
 
 
         add(listaMateriais, BorderLayout.CENTER);
+    }
+
+    private static JLabel createDescricao() {
+        JLabel descricao = new JLabel(
+            "<html><center>Explore os materiais no seu<br>" +
+            "ritmo, com opções de vídeos e<br>" +
+            "audiobooks!</center></html>"
+        );
+        descricao.setFont(new Font("Arial", Font.PLAIN, 20));
+        descricao.setForeground(new Color(140, 28, 97));
+        descricao.setHorizontalAlignment(SwingConstants.CENTER);
+        descricao.setAlignmentX(Component.CENTER_ALIGNMENT);
+        descricao.setPreferredSize(new Dimension(440, 80));
+        descricao.setMaximumSize(new Dimension(440, 80));
+        return descricao;
     }
 
     private JButton criarBotaoMaterial(String texto) {
