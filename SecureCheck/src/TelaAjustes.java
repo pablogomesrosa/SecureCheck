@@ -55,6 +55,9 @@ public class TelaAjustes extends JPanel {
         botao.addActionListener(_ -> {
             boolean estaLigado = botao.getText().equals("Ligado");
             mudarEstado(botao, !estaLigado);
+            if (nome.equals("Modo escuro")) {
+                TemaEscuro.alternar(!estaLigado);
+            }
         });
 
         linha.add(botao, BorderLayout.EAST);
