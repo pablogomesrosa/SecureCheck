@@ -635,7 +635,7 @@ public class JanelaPrincipal extends JFrame implements Navegador {
     private static final String AUDIOBOOK_MATERIAL_4 = "https://notebooklm.link.google/IokOlA1w5OF4";
 
     private static final String VIDEO_MATERIAL_5 = "https://www.youtube.com/watch?v=QqqJtr-7DUk";
-    private static final String AUDIOBOOK_MATERIAL_5 = "";
+    private static final String AUDIOBOOK_MATERIAL_5 = "https://notebooklm.link.google/lGhFLvUVQuWb";
 
     private final CardLayout cardLayout = new CardLayout();
     private final JPanel areaTelas = new JPanel(cardLayout);
