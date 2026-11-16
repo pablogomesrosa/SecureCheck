@@ -720,7 +720,7 @@ public class TelaQuiz extends JPanel {
         }
         tela.add(rodape, BorderLayout.SOUTH);
 
-        botaoAbandonar.setText(duasLinhas("Abandonar quiz"));
+        botaoAbandonar.setText(Quiz("Abandonar quiz"));
         botaoAbandonar.setBackground(Cores.ROSA_CLARO);
         botaoAnterior.addActionListener(_ -> {
             if (atual > 0) {
@@ -801,7 +801,7 @@ public class TelaQuiz extends JPanel {
         letra.setPreferredSize(new Dimension(60, 0));
 
         int maior = java.util.Arrays.stream(q, PRIMEIRA_ALTERNATIVA, q.length).mapToInt(String::length).max().getAsInt();
-        JLabel texto = new JLabel("<html>" + escapar(q[PRIMEIRA_ALTERNATIVA + indice]) + "</html>");
+        JLabel texto = new JLabel("<html>" + PrimeiraAlt(q[PRIMEIRA_ALTERNATIVA + indice]) + "</html>");
         texto.setFont(fonte(Font.PLAIN, maior > 160 ? 13 : maior > 120 ? 14 : 16));
         texto.setForeground(Color.WHITE);
 
@@ -839,8 +839,7 @@ public class TelaQuiz extends JPanel {
     private void mostrarResultado() {
         emResultado = true;
         int total = questoesAtuais.size();
-        int acertos = (int) java.util.stream.IntStream.range(0, total)
-                .filter(i -> respostas[i] == correta(questoesAtuais.get(i))).count();
+        int acertos = (int) java.util.stream.IntStream.range(0, total).filter(i -> respostas[i] == correta(questoesAtuais.get(i))).count();
 
         JLabel placar = new JLabel("Você obteve " + acertos + (acertos == 1 ? " acerto" : " acertos") + " de " + total, SwingConstants.CENTER);
         placar.setOpaque(true);
@@ -852,38 +851,36 @@ public class TelaQuiz extends JPanel {
         barraQuestao.setText("Resultado");
         botaoAnterior.setVisible(false);
         botaoAbandonar.setVisible(false);
-        botaoPrincipal.setText(duasLinhas("Voltar"));
+        botaoPrincipal.setText(Quiz("Voltar"));
         botaoPrincipal.setBackground(Cores.ROSA_CLARO);
         montarConteudo(placar, null);
     }
 
     private void atualizarBotoes() {
-        botaoAnterior.setText(duasLinhas("Questão anterior"));
+        botaoAnterior.setText(Quiz("Questão anterior"));
         botaoAnterior.setBackground(atual > 0 ? Cores.ROSA_CLARO : ROXO_ESCURO);
         if (!confirmadas[atual]) {
-            botaoPrincipal.setText(duasLinhas("Selecionar alternativa"));
+            botaoPrincipal.setText(Quiz("Selecionar alternativa"));
             botaoPrincipal.setBackground(respostas[atual] >= 0 ? Cores.ROSA_CLARO : ROXO_ESCURO);
         } else {
-            botaoPrincipal.setText(duasLinhas(atual < questoesAtuais.size() - 1 ? "Próxima questão" : "Finalizar questão"));
+            botaoPrincipal.setText(Quiz(atual < questoesAtuais.size() - 1 ? "Próxima questão" : "Finalizar questão"));
             botaoPrincipal.setBackground(Cores.ROSA_CLARO);
         }
     }
 
     private static int correta(String[] q) { return Integer.parseInt(q[CORRETA]); }
-
     private static Font fonte(int estilo, int tamanho) { return new Font("Arial", estilo, tamanho); }
-
     private static JPanel painel(LayoutManager layout) {
         JPanel painel = new JPanel(layout);
         painel.setBackground(Color.WHITE);
         return painel;
     }
 
-    private static String duasLinhas(String texto) {
+    private static String Quiz(String texto) {
         return "<html><center>" + texto.replace(" ", "<br>") + "</center></html>";
     }
 
-    private static String escapar(String texto) {
+    private static String PrimeiraAlt(String texto) {
         return texto.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
 }
